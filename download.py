@@ -8,7 +8,7 @@ import random
 import os
 
 flags.DEFINE_string(
-    'folder',
+    'dataset_folder',
     default=None,
     help='Folder where dataset will be downloaded to')
 
@@ -26,7 +26,7 @@ def main(_):
     
     sleep(random.choice(list(range(1, 5))))
     
-    file_path = os.path.join(FLAGS.folder, "download.txt")
+    file_path = os.path.join(FLAGS.dataset_folder, "download.txt")
     with open(file_path, "w") as fp:
         fp.write("".join(str(random.choice(string.ascii_lowercase)) for _ in range(10000)))
     
