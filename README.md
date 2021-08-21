@@ -1,5 +1,6 @@
 # Simple Airflow App
 
+An introductory airflow application to use Airflow library to manage Data Science Worflow. 
 This repository consists of application to simulate dataset download, visualizaion, straifies and creates tfrecords
 
 ## Install Dependencies
@@ -53,4 +54,5 @@ The entire DAG looks like this
 
 <img src = "./dag.png" width="800"/>
 <br/>
+
 
